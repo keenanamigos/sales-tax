@@ -1,0 +1,27 @@
+{
+  "name": "sales-tax",
+  "version": "1.0.0",
+  "description": "sales tax calculator built using TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "./node_modules/ts-node/dist/bin.js app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenanamigos/sales-tax.git"
+  },
+  "author": "keenanamigos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keenanamigos/sales-tax/issues"
+  },
+  "homepage": "https://github.com/keenanamigos/sales-tax#readme",
+  "dependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.53"
+  }
+}
