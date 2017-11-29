@@ -22,6 +22,7 @@
         "no-empty": true,
         "no-empty-interface": true,
         "no-eval": true,
+        "no-inferrable-types": true,
         "no-switch-case-fall-through": true,
         "no-trailing-whitespace": true,
         "no-var-keyword": true,
