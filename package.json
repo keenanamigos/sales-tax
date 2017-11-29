@@ -4,7 +4,7 @@
   "description": "sales tax calculator built using TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/*.spec.ts",
     "app": "./node_modules/ts-node/dist/bin.js app.ts",
     "lint": "tslint -c tslint.json src/*.ts"
   },
@@ -24,7 +24,10 @@
     "typescript": "^2.6.2"
   },
   "devDependencies": {
+    "@types/mocha": "^2.2.44",
     "@types/node": "^8.0.53",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
     "tslint": "^5.8.0",
     "tslint-eslint-rules": "^4.1.1"
   }
