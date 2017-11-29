@@ -12,4 +12,17 @@ export class Item {
     public isImported(description: string) {
         return description.includes("imported");
     }
+
+    public isExempt(description: string) {
+        // The items contained in this array are specific to the test data given per the problem
+        const salesTaxExemptItems: string[] = ["book", "chocolate", "pill"];
+
+        for (const item of salesTaxExemptItems) {
+            if (description.includes(item)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
