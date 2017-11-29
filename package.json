@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/keenanamigos/sales-tax#readme",
   "dependencies": {
+    "chalk": "^2.3.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   },
