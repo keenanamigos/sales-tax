@@ -1,7 +1,9 @@
-export class Receipt {
-    public itemList: Array<{ quantity: number, description: string, price: number }>;
+import { ShoppingBasket } from "./ShoppingBasket";
 
-    public constructor(shoppingBasket: Array<{ quantity: number, description: string, price: number }>) {
+export class Receipt {
+    public itemList: ShoppingBasket;
+
+    public constructor(shoppingBasket: ShoppingBasket) {
         this.itemList = shoppingBasket;
     }
 }
