@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "app": "./node_modules/ts-node/dist/bin.js app.ts"
+    "app": "./node_modules/ts-node/dist/bin.js app.ts",
+    "lint": "tslint -c tslint.json 'src/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "typescript": "^2.6.2"
   },
   "devDependencies": {
-    "@types/node": "^8.0.53"
+    "@types/node": "^8.0.53",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1"
   }
 }
