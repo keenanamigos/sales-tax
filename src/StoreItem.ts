@@ -1,4 +1,6 @@
-export class Item {
+import { IItem } from "./interfaces/IItem";
+
+export class StoreItem implements IItem {
     public quantity: number;
     public description: string;
     public price: number;

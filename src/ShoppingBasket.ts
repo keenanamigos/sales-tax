@@ -1,13 +1,9 @@
-export class ShoppingBasket {
-    public shoppingBasket: Array<{
-            quantity: number,
-            description: string,
-            price: number,
-            isImported: (description: string) => boolean,
-            isExempt: (description: string) => boolean
-    }>;
+import { IItem } from "./interfaces/IItem";
 
-    public constructor(...items: Array<{quantity: number, description: string, price: number, isImported: (description: string) => boolean, isExempt: (description: string) => boolean}>) {
+export class ShoppingBasket {
+    public shoppingBasket: IItem[];
+
+    public constructor(...items: IItem[]) {
         this.shoppingBasket = items;
     }
 }
