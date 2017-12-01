@@ -18,4 +18,11 @@ describe("NumberHelper", () => {
             expect(NumberHelper.isGreaterThanZero(value)).to.equal(false);
         });
     });
+
+    describe("roundUp", () => {
+        it("should return a number rounded up to the nearest 0.05", () => {
+            const someNum = 54.625;
+            expect(NumberHelper.roundUp(someNum)).to.equal(54.65);
+        });
+    });
 });

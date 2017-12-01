@@ -6,4 +6,9 @@ export class NumberHelper {
 
         return false;
     }
+
+    public static roundUp(price: number): number {
+        // Rounding up to the nearest 0.05
+        return (Math.ceil(price * 20) / 20);
+    }
 }
