@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/*.spec.ts",
     "app": "./node_modules/ts-node/dist/bin.js app.ts",
-    "lint": "tslint -c tslint.json app.ts src/*.ts test/*.ts"
+    "lint": "tslint -c tslint.json app.ts src/*.ts test/*.ts",
+    "single-test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./test"
   },
   "repository": {
     "type": "git",
