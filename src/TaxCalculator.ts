@@ -17,7 +17,7 @@ export class TaxCalculator {
         }
     }
 
-    public static getSalesTax(preTaxTotal: number, postTaxTotal: number): number {
+    public static getSalesTaxTotal(preTaxTotal: number, postTaxTotal: number): number {
         return (postTaxTotal - preTaxTotal);
     }
 }

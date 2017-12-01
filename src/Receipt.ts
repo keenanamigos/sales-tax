@@ -25,7 +25,7 @@ export class Receipt {
         }
 
         postTaxTotal = this.getTotal(basket);
-        salesTax = TaxCalculator.getSalesTax(preTaxTotal, postTaxTotal);
+        salesTax = TaxCalculator.getSalesTaxTotal(preTaxTotal, postTaxTotal);
 
         output += `\nSales Taxes: ${salesTax.toFixed(2)}`;
         output += `\nTotal: ${postTaxTotal}`;
