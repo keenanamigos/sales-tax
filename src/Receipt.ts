@@ -15,8 +15,8 @@ export class Receipt {
         let postTaxTotal = 0;
         let salesTax: number;
         let formattedPrice: string;
-        const basket = this.itemList.shoppingBasket;
-        const preTaxTotal = this.getTotal(basket);
+        const basket: IItem[] = this.itemList.shoppingBasket;
+        const preTaxTotal: number = this.getTotal(basket);
 
         for (const item of basket) {
             TaxCalculator.applyTax(item);
