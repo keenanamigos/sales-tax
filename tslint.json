@@ -30,7 +30,7 @@
         "member-access": [true, "check-accessor", "check-constructor"],
         "member-ordering": [true, {"order": "fields-first" }],
         "object-literal-sort-keys": false,
-        "one-line": [true, "check-catch", "check-else", "check-open-brance", "check-whitespace"],
+        "one-line": [true, "check-catch", "check-else", "check-open-brace", "check-whitespace"],
         "one-variable-per-declaration": [true, "ignore-for-loop"],
         "quotemark": [true, "double"],
         "radix": true,
