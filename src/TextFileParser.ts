@@ -16,7 +16,7 @@ export class TextFileParser {
             const length: number = itemArray.length;
 
             for (let i = 1; i < length - 1; i++) {
-                itemDescription += itemArray[i] + " ";
+                itemDescription += `${itemArray[i]} `;
             }
 
             const quantity: number = parseFloat(itemArray[0]);
