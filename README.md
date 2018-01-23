@@ -63,3 +63,7 @@ Total: 74.68 <br>
 <p>As it currently stands, the input files need to be written in the below format to be properly parsed</p>
 <p><code>[quantity] [description] [price]</code></p>
 <p>Example: <code>1 book at 12.49</code></p>
+<hr />
+
+<h2>Technologies Used:</h2>
+<p>Node.js, npm, TypeScript, TSLint, Mocha, Chai</p>
