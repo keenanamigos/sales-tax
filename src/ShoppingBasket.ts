@@ -23,10 +23,8 @@ export class ShoppingBasket {
     }
 
     private validateValues(item: IItem): boolean {
-        if (NumberHelper.isGreaterThanZero(item.quantity) && item.description && NumberHelper.isGreaterThanZero(item.price)) {
-            return true;
-        }
+        const areValuesValid = item && NumberHelper.isGreaterThanZero(item.quantity) && item.description && NumberHelper.isGreaterThanZero(item.price);
 
-        return false;
+        return areValuesValid ? true: false;
     }
 }

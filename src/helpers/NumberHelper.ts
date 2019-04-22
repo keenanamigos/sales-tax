@@ -1,10 +1,6 @@
 export class NumberHelper {
     public static isGreaterThanZero(int: number) {
-        if (int > 0) {
-            return true;
-        }
-
-        return false;
+        return int > 0 ? true : false;
     }
 
     public static roundUp(price: number): number {
